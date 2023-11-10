@@ -1,0 +1,358 @@
+{
+  "sensors": [
+    {
+      "id": 1,
+      "temperature": 1,
+      "humidity": 1,
+      "timestamp": 23232
+    },
+    {
+      "hum": 63,
+      "temp": 21,
+      "timestamp": 15026,
+      "id": 2
+    },
+    {
+      "hum": 66,
+      "temp": 22,
+      "timestamp": 31389,
+      "id": 3
+    },
+    {
+      "hum": 64,
+      "temp": 23,
+      "timestamp": 46667,
+      "id": 4
+    },
+    {
+      "hum": 63,
+      "temp": 24,
+      "timestamp": 61745,
+      "id": 5
+    },
+    {
+      "hum": 64,
+      "temp": 22,
+      "timestamp": 77067,
+      "id": 6
+    },
+    {
+      "hum": 63,
+      "temp": 22,
+      "timestamp": 92356,
+      "id": 7
+    },
+    {
+      "hum": 63,
+      "temp": 22,
+      "timestamp": 107496,
+      "id": 8
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 10026,
+      "id": 9
+    },
+    {
+      "hum": 66,
+      "temp": 21,
+      "timestamp": 20192,
+      "id": 10
+    },
+    {
+      "hum": 66,
+      "temp": 22,
+      "timestamp": 30297,
+      "id": 11
+    },
+    {
+      "hum": 67,
+      "temp": 22,
+      "timestamp": 40405,
+      "id": 12
+    },
+    {
+      "hum": 65,
+      "temp": 24,
+      "timestamp": 70699,
+      "id": 13
+    },
+    {
+      "hum": 60,
+      "temp": 29,
+      "timestamp": 80779,
+      "id": 14
+    },
+    {
+      "hum": 65,
+      "temp": 22,
+      "timestamp": 90905,
+      "id": 15
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 101051,
+      "id": 16
+    },
+    {
+      "hum": 66,
+      "temp": 22,
+      "timestamp": 111152,
+      "id": 17
+    },
+    {
+      "hum": 67,
+      "temp": 21,
+      "timestamp": 124291,
+      "id": 18
+    },
+    {
+      "hum": 63,
+      "temp": 25,
+      "timestamp": 134479,
+      "id": 19
+    },
+    {
+      "hum": 66,
+      "temp": 22,
+      "timestamp": 144592,
+      "id": 20
+    },
+    {
+      "hum": 66,
+      "temp": 22,
+      "timestamp": 154665,
+      "id": 21
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 164946,
+      "id": 22
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 175066,
+      "id": 23
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 185272,
+      "id": 24
+    },
+    {
+      "hum": 60,
+      "temp": 25,
+      "timestamp": 195667,
+      "id": 25
+    },
+    {
+      "hum": 62,
+      "temp": 21,
+      "timestamp": 10026,
+      "id": 26
+    },
+    {
+      "hum": 65,
+      "temp": 22,
+      "timestamp": 20228,
+      "id": 27
+    },
+    {
+      "hum": 59,
+      "temp": 27,
+      "timestamp": 30363,
+      "id": 28
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 40532,
+      "id": 29
+    },
+    {
+      "hum": 64,
+      "temp": 22,
+      "timestamp": 50641,
+      "id": 30
+    },
+    {
+      "hum": 66,
+      "temp": 22,
+      "timestamp": 60771,
+      "id": 31
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 70922,
+      "id": 32
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 81151,
+      "id": 33
+    },
+    {
+      "hum": 65,
+      "temp": 22,
+      "timestamp": 91244,
+      "id": 34
+    },
+    {
+      "hum": 61,
+      "temp": 23,
+      "timestamp": 101618,
+      "id": 35
+    },
+    {
+      "hum": 61,
+      "temp": 23,
+      "timestamp": 112416,
+      "id": 36
+    },
+    {
+      "hum": 64,
+      "temp": 22,
+      "timestamp": 122518,
+      "id": 37
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 132622,
+      "id": 38
+    },
+    {
+      "hum": 60,
+      "temp": 25,
+      "timestamp": 142705,
+      "id": 39
+    },
+    {
+      "hum": 67,
+      "temp": 22,
+      "timestamp": 152806,
+      "id": 40
+    },
+    {
+      "hum": 61,
+      "temp": 23,
+      "timestamp": 163331,
+      "id": 41
+    },
+    {
+      "hum": 65,
+      "temp": 23,
+      "timestamp": 173422,
+      "id": 42
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 183562,
+      "id": 43
+    },
+    {
+      "hum": 61,
+      "temp": 24,
+      "timestamp": 193665,
+      "id": 44
+    },
+    {
+      "hum": 64,
+      "temp": 24,
+      "timestamp": 203792,
+      "id": 45
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 214328,
+      "id": 46
+    },
+    {
+      "hum": 66,
+      "temp": 22,
+      "timestamp": 224414,
+      "id": 47
+    },
+    {
+      "hum": 62,
+      "temp": 23,
+      "timestamp": 234547,
+      "id": 48
+    },
+    {
+      "hum": 61,
+      "temp": 24,
+      "timestamp": 244666,
+      "id": 49
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 254858,
+      "id": 50
+    },
+    {
+      "hum": 62,
+      "temp": 22,
+      "timestamp": 264938,
+      "id": 51
+    },
+    {
+      "hum": 63,
+      "temp": 22,
+      "timestamp": 275102,
+      "id": 52
+    },
+    {
+      "hum": 62,
+      "temp": 21,
+      "timestamp": 10026,
+      "id": 53
+    },
+    {
+      "hum": 65,
+      "temp": 22,
+      "timestamp": 20411,
+      "id": 54
+    },
+    {
+      "hum": 63,
+      "temp": 25,
+      "timestamp": 30523,
+      "id": 55
+    },
+    {
+      "hum": 62,
+      "temp": 21,
+      "timestamp": 40762,
+      "id": 56
+    },
+    {
+      "hum": 65,
+      "temp": 21,
+      "timestamp": 50860,
+      "id": 57
+    },
+    {
+      "hum": 64,
+      "temp": 25,
+      "timestamp": 61040,
+      "id": 58
+    },
+    {
+      "hum": 64,
+      "temp": 23,
+      "timestamp": 71142,
+      "id": 59
+    }
+  ]
+}
