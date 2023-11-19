@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LED Control</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(45deg, #3498db, #e74c3c, #1abc9c, #f39c12);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #container {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      max-width: 600px; /* Increase container width */
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 3em; /* Larger font size */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow */
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px; /* Increased gap between buttons */
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 20px 40px; /* Larger button padding */
+      font-size: 1.5em; /* Larger font size */
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add button shadow */
+    }
+
+    #onButton {
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    #offButton {
+      background-color: #e74c3c;
+      color: #fff;
+    }
+
+    button:hover {
+      filter: brightness(1.2);
+    }
+
+    .led-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .led-animation {
+      width: 100px; /* Larger LED size */
+      height: 100px; /* Larger LED size */
+      border-radius: 50%;
+      background-color: #3498db;
+      position: relative;
+      animation: bounce 1.5s infinite ease-in-out;
+      margin: 0 auto;
+    }
+
+    .led-on {
+      background-color: #3498db;
+      box-shadow: 0 0 40px #3498db; /* Larger shadow for LED */
+      animation: bounce 1.5s infinite ease-in-out;
+    }
+
+    .led-off {
+      background-color: #e74c3c;
+      box-shadow: 0 0 40px #e74c3c; /* Larger shadow for LED */
+      animation: none;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+
+    .background-animation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.3;
+      background: linear-gradient(45deg, #3498db, #e74c3c, #1abc9c, #f39c12);
+      background-size: 400% 400%;
+      animation: gradientShift 15s infinite;
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 100%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js"></script>
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+</head>
+
+<body>
+
+  <div class="background-animation"></div>
+
+  <div id="container">
+    <h1>LED Control</h1>
+    <div class="led-container">
+      <div class="led-animation" id="ledIndicator"></div>
+    </div>
+    <div class="button-container">
+      <button id="onButton" onclick="turnOnLED()">Turn On LED</button>
+      <button id="offButton" onclick="turnOffLED()">Turn Off LED</button>
+    </div>
+  </div>
+
+  <script>
+    var mqttClient;
+    var isLedOn = false;
+
+    function connectMQTT() {
+      mqttClient = new Paho.MQTT.Client("172.20.10.12", 9001, "web_" + parseInt(Math.random() * 100, 10));
+      mqttClient.onConnectionLost = onConnectionLost;
+      mqttClient.connect({
+        onSuccess: function () {
+          console.log("Connected to MQTT broker");
+          subscribeToLedTopic();
+        },
+        onFailure: function (message) {
+          console.log("Connection failed: " + message.errorMessage);
+        }
+      });
+    }
+
+    function subscribeToLedTopic() {
+      mqttClient.subscribe("led_control");
+    }
+
+    function turnOnLED() {
+      playSound("button-click.mp3");
+      updateLEDState(true);
+    }
+
+    function turnOffLED() {
+      playSound("button-click.mp3");
+      updateLEDState(false);
+    }
+
+    function updateLEDState(newState) {
+      if (mqttClient && mqttClient.isConnected()) {
+        isLedOn = newState;
+        var ledIndicator = document.getElementById("ledIndicator");
+        ledIndicator.classList.toggle("led-on", isLedOn);
+        ledIndicator.classList.toggle("led-off", !isLedOn);
+
+        var message = new Paho.MQTT.Message(isLedOn ? "ON" : "OFF");
+        message.destinationName = "led_control";
+        mqttClient.send(message);
+
+        document.getElementById("onButton").disabled = isLedOn;
+        document.getElementById("offButton").disabled = !isLedOn;
+      } else {
+        console.log("MQTT client not connected");
+      }
+    }
+
+    function onConnectionLost(responseObject) {
+      if (responseObject.errorCode !== 0) {
+        console.log("Connection lost: " + responseObject.errorMessage);
+      }
+    }
+
+    function playSound(soundFile) {
+      var sound = new Audio(soundFile);
+      sound.play();
+    }
+
+    window.onload = function () {
+      connectMQTT();
+    };
+  </script>
+
+</body>
+
+</html>

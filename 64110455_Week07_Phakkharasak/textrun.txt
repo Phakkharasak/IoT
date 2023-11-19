@@ -1,0 +1,3 @@
+mosquitto_sub -i node_001 -h 172.20.10.12 -t "dht11"
+
+json-server --watch data.json --host 172.20.10.12 --port 3000

@@ -1,0 +1,256 @@
+{
+  "DHT11": [
+    {
+      "id": 0,
+      "Temperature": 0,
+      "Humidity": 0,
+      "SensorFailure": 0,
+      "IP": 0
+    },
+    {
+      "id": 1,
+      "Temperature": "Error Celsius",
+      "Humidity": "Error Percent",
+      "SensorFailure": "Failed to read from DHT sensor!",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 2,
+      "Temperature": "Error Celsius",
+      "Humidity": "Error Percent",
+      "SensorFailure": "Failed to read from DHT sensor!",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 3,
+      "Temperature": "Error Celsius",
+      "Humidity": "Error Percent",
+      "SensorFailure": "Failed to read from DHT sensor!",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 4,
+      "Temperature": "Error Celsius",
+      "Humidity": "Error Percent",
+      "SensorFailure": "Failed to read from DHT sensor!",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 5,
+      "Temperature": "Error Celsius",
+      "Humidity": "Error Percent",
+      "SensorFailure": "Failed to read from DHT sensor!",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 6,
+      "Temperature": "Error Celsius",
+      "Humidity": "Error Percent",
+      "SensorFailure": "Failed to read from DHT sensor!",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 7,
+      "Temperature": "Error Celsius",
+      "Humidity": "Error Percent",
+      "SensorFailure": "Failed to read from DHT sensor!",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 8,
+      "Temperature": "Error Celsius",
+      "Humidity": "Error Percent",
+      "SensorFailure": "Failed to read from DHT sensor!",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 9,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "34.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 10,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "35.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 11,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "32.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 12,
+      "Temperature": "22.00 Celsius",
+      "Humidity": "34.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 13,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "41.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 14,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "35.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 15,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "44.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 16,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "47.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 17,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "38.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 18,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "41.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 19,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "40.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 20,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "33.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 21,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "41.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 22,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "42.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 23,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "35.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 24,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "44.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 25,
+      "Temperature": "22.00 Celsius",
+      "Humidity": "20.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 26,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "37.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 27,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "32.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 28,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "33.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 29,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "30.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 30,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "32.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 31,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "32.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 32,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "40.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 33,
+      "Temperature": "24.00 Celsius",
+      "Humidity": "32.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 34,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "32.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    },
+    {
+      "id": 35,
+      "Temperature": "23.00 Celsius",
+      "Humidity": "35.00 Percent",
+      "SensorFailure": "",
+      "IP": "172.20.10.12"
+    }
+  ]
+}
